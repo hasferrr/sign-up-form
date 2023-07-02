@@ -8,6 +8,10 @@
     src: url(fonts/Manrope-Regular.ttf);
 }
 
+* {
+    border: 0px solid red;
+}
+
 body {
     margin: 0px;
     padding: 0px;
@@ -26,7 +30,7 @@ body {
     background-image: url(images/background.jpg);
     background-position: center;
     background-size: cover;
-    color: whitesmoke;
+    color: white;
     display: flex;
     flex-direction: column;
 }
@@ -36,13 +40,12 @@ body {
     justify-content: center;
     background-color: #00000090;
     padding: 1.25rem;
-    margin-top: 35%;
+    margin-top: 30%;
     margin-bottom: auto;
 }
 
 .hero-side > .text-img-source {
     text-align: center;
-    font-size: 1.1rem;
 }
 
 .odin-icon {
@@ -62,18 +65,17 @@ body {
     width: var(--form-side-width);
     height: 100vh;
     background-color: #f9fafb;
-    font-size: 1.2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
 .form-side > div {
-    padding: 1.25rem;
+    padding: 2rem;
 }
 
-.form-side > .title {
-    font-weight: bold;
+.form-side > .title-text {
+    font-size: 1.2rem;
 }
 
 .form-side > .user-forms {
@@ -81,6 +83,31 @@ body {
     box-shadow: rgba(0, 0, 0, 0.09) 0px 5px 10px;
 }
 
-.form-side > .footer {
+.form-side > .user-forms > .form-title {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
 
+.form-side > .user-forms > form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-side > .user-forms > form > div {
+    width: 49%;
+}
+
+label {
+    font-size: 1.1rem;
+}
+
+input {
+    border: 1px solid #D6D9DC;
+    border-radius: 3px;
+    width: 80%;
+    padding: 0.3rem;
+    font-size: 1rem;
+    font-family: inherit;
+    margin-top: 3px;
+    margin-bottom: 3px;
 }
