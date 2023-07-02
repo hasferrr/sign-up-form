@@ -1,0 +1,75 @@
+@font-face {
+    font-family: Norse-Bold;
+    src: url(fonts/Norse-Bold.otf);
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* .main * {
+    border: 1px solid red;
+} */
+
+.main {
+    display: flex;
+    --hero-side-width: 35vw;
+    --form-side-width: calc(100vw - var(--hero-side-width));
+}
+
+.hero-side {
+    width: var(--hero-side-width);
+    height: 100vh;
+    background-image: url(images/background.jpg);
+    background-position: center;
+    background-size: cover;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-side > .odin {
+    display: flex;
+    justify-content: center;
+    background-color: #00000090;
+    padding: 20px;
+    margin-top: 40%;
+    margin-bottom: auto;
+}
+
+.hero-side > p {
+    text-align: center;
+}
+
+.odin-icon {
+    margin-top: auto;
+    margin-bottom: auto;
+    max-width: 5rem;
+}
+
+.odin-text {
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 5rem;
+    font-family: Norse-Bold, sans-serif;
+}
+
+.form-side {
+    width: var(--form-side-width);
+    height: 100vh;
+    --form-section: 30vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-side > .title {
+    height: var(--form-section);
+}
+
+.form-side > .user-forms {
+    height: calc(100vh - var(--form-section) * 2);
+}
+
+.form-side > .footer {
+    height: var(--form-section);
+}
