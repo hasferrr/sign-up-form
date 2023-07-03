@@ -8,10 +8,6 @@
     src: url(fonts/Manrope-Regular.ttf);
 }
 
-* {
-    border: 0px solid red;
-}
-
 a {
     text-decoration: none;
     color: inherit;
@@ -27,6 +23,10 @@ body {
     font-family: Manrope, sans-serif;
     --hero-side-width: 35vw;
     --form-side-width: calc(100vw - var(--hero-side-width));
+}
+
+.main * {
+    box-sizing: border-box;
 }
 
 .hero-side {
@@ -81,6 +81,42 @@ body {
     font-size: 1.1rem;
 }
 
+@media (max-height: 680px) {
+    .form-side {
+        justify-content: flex-start;
+    }
+    .hero-side {
+        height: 680px;
+    }
+}
+
+@media (max-width: 790px) {
+    .main {
+        flex-direction: column;
+        --hero-side-width: 100%;
+        --form-side-width: 100%;
+    }
+    .hero-side {
+        height: 100vh;
+    }
+    .hero-side > .odin {
+        margin-top: auto;
+    }
+    .form-side {
+        justify-content: flex-start;
+    }
+    .form-side .user-forms > form {
+        flex-direction: column;
+    }
+    .form-side > .user-forms > form > div.inp {
+        width: 100%;
+    }
+    .user-forms form > div > input {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
 .form-side > div {
     padding: 1.5rem 2rem 1.5rem;
 }
@@ -101,7 +137,7 @@ body {
 }
 
 .form-side > .user-forms > form > div {
-    width: 49%;
+    width: 50%;
     margin-bottom: 1.2rem;
 }
 
@@ -112,7 +148,7 @@ body {
 .user-forms input {
     border: 1px solid #D6D9DC;
     border-radius: 3px;
-    width: 80%;
+    width: 90%;
     padding: 0.6rem;
     font-size: 0.9rem;
     font-family: inherit;
