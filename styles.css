@@ -82,7 +82,7 @@ body {
 }
 
 .form-side > div {
-    padding: 2rem;
+    padding: 1.5rem 2rem 1.5rem;
 }
 
 .form-side > .title-text {
@@ -94,18 +94,15 @@ body {
     box-shadow: rgba(0, 0, 0, 0.09) 0px 5px 10px;
 }
 
-.form-side > .user-forms > .form-title {
-    margin-bottom: 1rem;
-}
-
 .form-side > .user-forms > form {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 2rem;
+    margin: 1rem auto 1rem;
 }
 
 .form-side > .user-forms > form > div {
     width: 49%;
+    margin-bottom: 1.2rem;
 }
 
 .user-forms label {
@@ -119,17 +116,17 @@ body {
     padding: 0.3rem 0.5rem;
     font-size: 1rem;
     font-family: inherit;
-    margin-top: 3px;
-    margin-bottom: 3px;
+    margin: 0;
     outline: none;
 }
 
 .user-forms .error {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     margin-top: 0;
     margin-bottom: 0.3rem;
     padding: 0;
     color: red;
+    position: absolute;
 }
 
 .user-forms input:focus {

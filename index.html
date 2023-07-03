@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-Up Form</title>
     <link rel="stylesheet" href="styles.css">
-
+    <script src="scripts.js" defer></script>
 </head>
 
 <body>
@@ -30,37 +30,41 @@
 
             <div class="user-forms">
                 <div class="form-title"><strong>Let's do this!</strong></div>
+
                 <form action="#" method="post" class="create-acc">
-                    <div class="fname">
+                    <div class="fname inp">
                         <label for="fname">First Name</label>
                         <br>
                         <input type="text" name="fname" id="fname" required>
                     </div>
-                    <div class="lname">
+                    <div class="lname inp">
                         <label for="lname">Last Name</label>
                         <br>
                         <input type="text" name="lname" id="lname" required>
                     </div>
-                    <div class="email">
+
+                    <div class="email inp">
                         <label for="email">Email</label>
                         <br>
                         <input type="email" name="email" id="email" required>
                     </div>
-                    <div class="tel">
+                    <div class="tel inp">
                         <label for="tel">Phone Number</label>
                         <br>
                         <input type="tel" name="tel" id="tel" required pattern="^(?:\+\d{6,17}|\d{6,15})$">
                     </div>
-                    <div class="pwd">
+
+                    <div class="pwd inp">
                         <label for="pwd">Password</label>
                         <br>
                         <input type="password" name="pwd" id="pwd" required>
+                        <div class="error"></div>
                     </div>
-                    <div class="pwd2">
+                    <div class="pwd2 inp">
                         <label for="pwd2">Confirm Password</label>
                         <br>
                         <input type="password" name="pwd2" id="pwd2" required>
-                        <!-- <div class="error">* Password do not match</div> -->
+                        <div class="error"></div>
                     </div>
             </div>
 
