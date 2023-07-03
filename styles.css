@@ -97,11 +97,11 @@ body {
     width: 49%;
 }
 
-.form-side > .user-forms label {
+.user-forms label {
     font-size: 1rem;
 }
 
-.form-side > .user-forms input {
+.user-forms input {
     border: 1px solid #D6D9DC;
     border-radius: 3px;
     width: 80%;
@@ -110,6 +110,28 @@ body {
     font-family: inherit;
     margin-top: 3px;
     margin-bottom: 3px;
+    outline: none;
+}
+
+.user-forms .err-msg {
+    font-size: 0.8rem;
+    margin-top: 0;
+    margin-bottom: 0.3rem;
+    padding: 0;
+    color: red;
+}
+
+.user-forms input:focus {
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border: 1px solid lightskyblue;
+}
+
+.user-forms input:focus:invalid {
+    border: 1px solid lightskyblue;
+}
+
+.user-forms input:invalid {
+    border: 1px solid red;
 }
 
 .form-side button[type='submit'] {
