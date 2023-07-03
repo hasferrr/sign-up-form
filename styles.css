@@ -86,7 +86,7 @@ body {
         justify-content: flex-start;
     }
     .hero-side {
-        height: 680px;
+        height: 690px;
     }
 }
 
@@ -115,6 +115,14 @@ body {
         width: 100%;
         box-sizing: border-box;
     }
+    .main > .form-side > div:first-child {
+        padding: 2rem;
+    }
+    .form-side .title-text,
+    .form-side .form-title,
+    .form-side .footer {
+        text-align: center;
+    }
 }
 
 .form-side > div {
@@ -130,13 +138,17 @@ body {
     box-shadow: rgba(0, 0, 0, 0.09) 0px 5px 10px;
 }
 
-.form-side > .user-forms > form {
+.user-forms > .form-title {
+    font-size: 1.2rem;
+}
+
+.user-forms > form {
     display: flex;
     flex-wrap: wrap;
     margin: 1rem auto 1rem;
 }
 
-.form-side > .user-forms > form > div {
+.user-forms > form > div {
     width: 50%;
     margin-bottom: 1.2rem;
 }
