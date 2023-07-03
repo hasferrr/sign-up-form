@@ -12,6 +12,11 @@
     border: 0px solid red;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 body {
     margin: 0px;
     padding: 0px;
@@ -46,6 +51,11 @@ body {
 
 .hero-side > .text-img-source {
     text-align: center;
+    font-size: 0.9rem;
+}
+
+.hero-side > .text-img-source a:hover {
+    text-decoration: underline;
 }
 
 .odin-icon {
@@ -150,6 +160,5 @@ body {
 }
 
 .form-side > .footer a.login {
-    text-decoration: none;
     color:rgb(108 157 197);
 }
