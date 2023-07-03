@@ -68,6 +68,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    font-size: 1.1rem;
 }
 
 .form-side > div {
@@ -84,7 +85,6 @@ body {
 }
 
 .form-side > .user-forms > .form-title {
-    font-size: 1.2rem;
     margin-bottom: 1rem;
 }
 
@@ -97,17 +97,37 @@ body {
     width: 49%;
 }
 
-label {
-    font-size: 1.1rem;
+.form-side > .user-forms label {
+    font-size: 1rem;
 }
 
-input {
+.form-side > .user-forms input {
     border: 1px solid #D6D9DC;
     border-radius: 3px;
     width: 80%;
-    padding: 0.3rem;
+    padding: 0.3rem 0.5rem;
     font-size: 1rem;
     font-family: inherit;
     margin-top: 3px;
     margin-bottom: 3px;
+}
+
+.form-side button[type='submit'] {
+    padding: 0.6rem 1.2rem;
+    font-size: inherit;
+    background-color: rgb(108 157 197);
+    border: 0px;
+    border-radius: 8px;
+    color: white;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.form-side button[type='submit']:hover {
+    background-color: rgb(84, 120, 150);
+    cursor: pointer;
+}
+
+.form-side > .footer a.login {
+    text-decoration: none;
+    color:rgb(108 157 197);
 }
