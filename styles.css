@@ -101,6 +101,7 @@ body {
 .form-side > .user-forms > form {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 2rem;
 }
 
 .form-side > .user-forms > form > div {
@@ -123,7 +124,7 @@ body {
     outline: none;
 }
 
-.user-forms .err-msg {
+.user-forms .error {
     font-size: 0.8rem;
     margin-top: 0;
     margin-bottom: 0.3rem;
@@ -138,10 +139,6 @@ body {
 
 .user-forms input:focus:invalid {
     border: 1px solid lightskyblue;
-}
-
-.user-forms input:invalid {
-    border: 1px solid red;
 }
 
 .form-side button[type='submit'] {
